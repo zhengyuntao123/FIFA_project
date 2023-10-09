@@ -236,4 +236,47 @@ PRIMARY KEY (year,sofifa_id)
 
 # Description
 
-TBD
+1. `sofifa_id`: Unique ID for a player in the SOFIFA database.
+2. `player_url`: URL linking to detailed information about the player.
+3. `short_name`: Shortened version of the player's name.
+4. `long_name`: Full name of the player.
+5. `player_positions`: Positions that the player can play.
+6. `overall`: Overall rating of the player's skills.
+7. `potential`: Potential future rating of the player.
+8. `value_eur`: Monetary value of the player in Euros.
+9. `wage_eur`: Player's weekly wage in Euros.
+10. `age`: Age of the player.
+11. `dob`: Date of birth of the player.
+12. `height_cm`: Height of the player in centimeters.
+13. `weight_kg`: Weight of the player in kilograms.
+14. `club_team_id`: ID for the club team the player belongs to.
+15. `club_name`: Name of the player's club team.
+16. `league_name`: Name of the league the player's club participates in.
+17. `league_level`: Level of the league.
+18. `club_position`: Position of the player within the club.
+19. `club_jersey_number`: Jersey number of the player in the club.
+20. `club_loaned_from`: If applicable, the club from which the player is loaned.
+21. `club_joined`: Date when the player joined the current club.
+22. `club_contract_valid_until`: Validity date of the player's contract with the club.
+23. `nationality_id`: ID for the player's nationality.
+24. `nationality_name`: Name of the player's nationality.
+25. `nation_team_id`: ID for the player's national team.
+26. `nation_position`: Position of the player within the national team.
+27. `nation_jersey_number`: Jersey number of the player in the national team.
+28. `preferred_foot`: Preferred foot of the player.
+29. `weak_foot`: Rating of the player's weaker foot.
+30. `skill_moves`: Rating of the player's skill moves.
+31. `international_reputation`: Player's reputation in international competitions.
+32. `work_rate`: Work rate of the player.
+33. `body_type`: Body type of the player.
+34. `real_face`: Indicates if the player's face is realistically represented.
+35. `release_clause_eur`: Monetary release clause in Euros.
+36. `player_tags`: Tags associated with the player.
+37. `player_traits`: Special traits associated with the player.
+
+38-66. Various attributes related to the player's skills, movement, power, mentality, defending, and goalkeeping.
+
+67-101. Overall and potential rating of the player in different positions.
+
+102-109. URLs for player images, club logo, club flag, nation logo, and nation flag.
+
