@@ -281,10 +281,10 @@ PRIMARY KEY (year,sofifa_id)
 102-109. URLs for player images, club logo, club flag, nation logo, and nation flag.
 
 # Comments on the regressors and the impact of tunable parameters
-GBT： The expressive power of Gradient Boosted Trees (GBT) is notable.  And it can an capture complex non-linear relationships in the data. This makes it effective in scenarios where the relationship between input features and the target variable is not linear.
-We choose to tune maxDepth and maxIter. 
-By tuning maxDepth, we can control overfitting and improve computational efficiency, because high maxDepth might cause overfitting and result in expensive time cost. By tuninbg maxIter, we can avoid underfitting and control trianing time, because low maxIter might result in underfitting the data.
+GBT： The expressive power of Gradient Boosted Trees (GBT) is notable. And it can an capture complex non-linear relationships in the data. This makes it effective in scenarios where the relationship between input features and the target variable is not linear.     
+We choose to tune maxDepth and maxIter.      
+By tuning maxDepth, we can control overfitting and improve computational efficiency, because high maxDepth might cause overfitting and result in expensive time cost. By tuninbg maxIter, we can avoid underfitting and control trianing time, because low maxIter might result in underfitting the data.      
 
-Linear Regression: Training and making predictions with linear regression models are computationally efficient, especially when dealing with large datasets. What's more, it can serve as an benchmark of regression problem.
-We choose to tune regParam and maxIter in Linear Regression. 
-By tuning regParam, we can control the degree of regularization, which deals with a trade-off between the bias and variance of the model. By tuning maxIter, we can make a trade-off between speed and convergence.
+Linear Regression: Training and making predictions with linear regression models are computationally efficient, especially when dealing with large datasets. What's more, it can serve as an benchmark of regression problem.     
+We choose to tune regParam and maxIter in Linear Regression.    
+By tuning regParam, we can control the degree of regularization, which deals with a trade-off between the bias and variance of the model. By tuning maxIter, we can make a trade-off between speed and convergence.    
