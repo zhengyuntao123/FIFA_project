@@ -281,6 +281,7 @@ PRIMARY KEY (year,sofifa_id)
 102-109. URLs for player images, club logo, club flag, nation logo, and nation flag.
 
 # Comments on the regressors and the impact of tunable parameters
+## PySpark Models
 GBT： The expressive power of Gradient Boosted Trees (GBT) is notable. And it can an capture complex non-linear relationships in the data. This makes it effective in scenarios where the relationship between input features and the target variable is not linear.     
 We choose to tune maxDepth and maxIter.      
 By tuning maxDepth, we can control overfitting and improve computational efficiency, because high maxDepth might cause overfitting and result in expensive time cost. By tuninbg maxIter, we can avoid underfitting and control trianing time, because low maxIter might result in underfitting the data.      
@@ -289,6 +290,7 @@ Linear Regression: Training and making predictions with linear regression models
 We choose to tune regParam and maxIter in Linear Regression.    
 By tuning regParam, we can control the degree of regularization, which deals with a trade-off between the bias and variance of the model. By tuning maxIter, we can make a trade-off between speed and convergence.    
 
+## PyTorch Models
 Reason for choosing MLP and CNN: The selection of Multi-Layer Perceptron (MLP) and Convolutional Neural Network (CNN) as our models is grounded in their widespread success across various domains, making them robust choices for regression tasks. These models excel in capturing intricate, non-linear relationships among diverse features within the data.
 
 Multi-Layer Perceptron (MLP) is a versatile and proven architecture, known for its ability to handle complex patterns and relationships in data. Its layered structure, comprising interconnected neurons, allows it to discern intricate dependencies that might be challenging for simpler models to grasp. MLP's adaptability and capacity to model non-linear connections make it a reliable choice for regression tasks where intricate relationships between features are prevalent.    
