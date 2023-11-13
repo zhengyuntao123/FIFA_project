@@ -288,3 +288,12 @@ By tuning maxDepth, we can control overfitting and improve computational efficie
 Linear Regression: Training and making predictions with linear regression models are computationally efficient, especially when dealing with large datasets. What's more, it can serve as an benchmark of regression problem.     
 We choose to tune regParam and maxIter in Linear Regression.    
 By tuning regParam, we can control the degree of regularization, which deals with a trade-off between the bias and variance of the model. By tuning maxIter, we can make a trade-off between speed and convergence.    
+
+Reason for choosing MLP and CNN: The selection of Multi-Layer Perceptron (MLP) and Convolutional Neural Network (CNN) as our models is grounded in their widespread success across various domains, making them robust choices for regression tasks. These models excel in capturing intricate, non-linear relationships among diverse features within the data.
+
+Multi-Layer Perceptron (MLP) is a versatile and proven architecture, known for its ability to handle complex patterns and relationships in data. Its layered structure, comprising interconnected neurons, allows it to discern intricate dependencies that might be challenging for simpler models to grasp. MLP's adaptability and capacity to model non-linear connections make it a reliable choice for regression tasks where intricate relationships between features are prevalent.
+For MLP: the best lr is 0.005 from (0.002, 0.005), and best batch size is 128 from (64, 128), the best EPOCH is from 91 out of 100. Which means slightly larger lr, batch size and Epoch will result in better accuracy. 
+
+Convolutional Neural Network (CNN), on the other hand, has demonstrated remarkable efficacy in image and signal processing tasks. Its unique architecture, featuring convolutional layers, enables it to automatically learn hierarchical representations of features. CNNs are particularly adept at capturing spatial dependencies, making them well-suited for regression problems where the relationships among different features are not only non-linear but also exhibit spatial characteristics.
+For CNN: best lr is 0.0005 from (0.0005, 0.001), best batch size is 64 from (64, 128), best EPOCH is 0 out of 10. So CNN is converging much faster compared with MLP, and more prone to overfitting in this case.
+
