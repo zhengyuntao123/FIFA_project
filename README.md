@@ -299,3 +299,6 @@ For MLP: the best lr is 0.005 from (0.002, 0.005), and best batch size is 128 fr
 Convolutional Neural Network (CNN), on the other hand, has demonstrated remarkable efficacy in image and signal processing tasks. Its unique architecture, featuring convolutional layers, enables it to automatically learn hierarchical representations of features. CNNs are particularly adept at capturing spatial dependencies, making them well-suited for regression problems where the relationships among different features are not only non-linear but also exhibit spatial characteristics.     
 For CNN: best lr is 0.0005 from (0.0005, 0.001), best batch size is 64 from (64, 128), best EPOCH is 0 out of 10. So CNN is converging much faster compared with MLP, and more prone to overfitting in this case.
 
+## Link to Video
+https://youtu.be/JH125shbeWc
+
