@@ -290,6 +290,8 @@ Linear Regression: Training and making predictions with linear regression models
 We choose to tune regParam and maxIter in Linear Regression.    
 By tuning regParam, we can control the degree of regularization, which deals with a trade-off between the bias and variance of the model. By tuning maxIter, we can make a trade-off between speed and convergence.    
 
+Comparing the 2 PySpark models, the result of GBT is obviously better than the result of Linear Regression, which is as expected, because Linear Regression is the most simple regression model.
+
 ## PyTorch Models
 Reason for choosing MLP and CNN: The selection of Multi-Layer Perceptron (MLP) and Convolutional Neural Network (CNN) as our models is grounded in their widespread success across various domains, making them robust choices for regression tasks. These models excel in capturing intricate, non-linear relationships among diverse features within the data.
 
@@ -298,6 +300,10 @@ For MLP: the best lr is 0.005 from (0.002, 0.005), and best batch size is 128 fr
 
 Convolutional Neural Network (CNN), on the other hand, has demonstrated remarkable efficacy in image and signal processing tasks. Its unique architecture, featuring convolutional layers, enables it to automatically learn hierarchical representations of features. CNNs are particularly adept at capturing spatial dependencies, making them well-suited for regression problems where the relationships among different features are not only non-linear but also exhibit spatial characteristics.     
 For CNN: best lr is 0.0005 from (0.0005, 0.001), best batch size is 64 from (64, 128), best EPOCH is 0 out of 10. So CNN is converging much faster compared with MLP, and more prone to overfitting in this case.
+
+Comparing CNN and MLP, CNN shows slightly better result on test dataset, and it converges faster compared with MLP.
+
+By comparing the test loss on 4 models, we can see that, from the perspective of test loss, the model that performs the best is GBT, which demonstrates its strong ability on regression task, especially in this case, data and features are numerous.
 
 ## Link to Video
 https://youtu.be/JH125shbeWc
